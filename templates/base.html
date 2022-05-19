@@ -1,0 +1,50 @@
+<html>
+<head>
+  
+  <!-- Custom Fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  
+
+   <title>{% block title %} Birthstone {% endblock %}</title>
+   <link rel="stylesheet" href="../static/css/style.css">
+</head>
+  
+<body>
+  <!-- Header -->
+  <div class="intro-header">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="intro-message">
+            <h1>Web Application Performance Task</h1>
+            <h2>{% block title2 %} Select the Month You Were Born {% endblock %}</h2>
+
+            <hr class="intro-divider">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+  </div>
+
+  <div class="content-section-a center">
+    CODE YOUR FORM HERE!
+  <!-- /.content-section-a -->
+  <!-- Card with Colors -->
+  <div class="row">
+  <div class="col s12 m6"> <!-- Start of card/column -->
+    <div class="card teal lighten-5">
+      <div class="card-content blue-text text-darken-1">
+        {% block content %}{% endblock %}
+      </div>
+    </div>
+  </div> <!-- End of card/column -->
+</div>
+<a href = '/'>Go Back</a>
+    
+  </div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
