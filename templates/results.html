@@ -2,7 +2,18 @@
 {% extends "base.html" %}
 
 {% block title %}Your Birthstone{% endblock %}
-{% block title2 %} {{ month }} is {{ birthstone }}!! {% endblock %}
+{% block title2 %}  {% endblock %}
 {% block content %}
- <img src="{{ source }}" class="responsive-img"/>
+<div class="d-flex justify-content-around">
+  <div class="card teal lighten-5" style="width: 18rem;">
+    <img class="card-img-top" 
+      src="{{birthstone['source'] }}" 
+      alt="Card image cap">
+    <div class="card-body">
+      <h4 class="card-text blue-text text-darken-1"> {{ birthstone['month'] }} is {{ birthstone['name'] }}!!</h4>
+    </div>
+  </div>
+</div>
+  
+
 {% endblock %}
