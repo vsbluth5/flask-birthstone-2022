@@ -32,7 +32,7 @@ def get_birthstone(month):
     birthstone_dict["month"] = "June"
     birthstone_dict["name"] = "Pearl"
     birthstone_dict["source"] = source
-    elif (month == 'july'):
+  elif (month == 'july'):
     source += 'jan_garnet.webp'
     birthstone_dict["month"] = "July"
     birthstone_dict["name"] = "Pearl"
